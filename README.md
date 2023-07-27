@@ -1,6 +1,6 @@
 # Cyberpunk Ripperdoc Appointment Scheduler
 
-![Ripperdoc](https://github.com/[abasile1-tech]/[cyberpunk_ripperdoc_appointment_scheduler]/blob/[main]/images/ripperdoc.jpg?raw=true)
+![Ripperdoc](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/images/ripperdoc.jpg?raw=true)
 
 In the Cyberpunk genre of science fiction, ripperdocs are medical practitioners that can install cybernetic prostheses, called cyberware.
 
