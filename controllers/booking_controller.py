@@ -24,8 +24,10 @@ def new_booking():
 def create_booking():
     customer_id = request.form['customer_id']
     treatment_id = request.form['treatment_id']
-    review = request.form['review']
-    booking = Booking(customer_id = customer_id, treatment_id = treatment_id, review=review)
+    name = request.form['name']
+    date = request.form['date']
+    time = request.form['time']
+    booking = Booking(customer_id = customer_id, treatment_id = treatment_id, name=name, date=date, time=time)
     db.session.add(booking)
     db.session.commit()
     return redirect('/bookings')
