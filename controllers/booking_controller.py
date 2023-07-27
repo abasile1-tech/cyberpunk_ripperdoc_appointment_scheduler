@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request, redirect
 from flask import Blueprint
-from models import Booking, Customer, Treatment
+from models.Booking import Booking
+from models.Customer import Customer
+from models.Treatment import Treatment
 from app import db
 
 bookings_blueprint = Blueprint("bookings", __name__)
