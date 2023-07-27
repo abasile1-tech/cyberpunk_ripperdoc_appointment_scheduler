@@ -2,7 +2,7 @@
 
 In the Cyberpunk genre of science fiction, ripperdocs are medical practitioners that can install cybernetic prostheses, called cyberware.
 
-## Running Instructions:
+## :arrow_right: Running Instructions:
 	- git clone
 	- pip install Flask
 	- pip install python-dotenv
