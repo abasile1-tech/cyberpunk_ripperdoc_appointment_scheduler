@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1> {{customer.name}} </h1>
+
+<h3>Bookings:</h3>
+
+<ul>
+	{% for treatment in treatments  %}
+	<li>{{treatment.name}}</li>
+	{% endfor %}
+</ul>
+
+{% endblock %}

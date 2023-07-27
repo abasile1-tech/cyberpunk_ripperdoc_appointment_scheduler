@@ -42,3 +42,10 @@ def delete_booking(id):
     Booking.query.filter_by(id = id).delete()
     db.session.commit()
     return redirect('/bookings')
+
+@bookings_blueprint.route("/bookings/<id>")
+def show(id):
+    booking = Booking.query.get(id)
+    treatment=Treatment.query.get(booking.treatment_id)
+    customer=Customer.query.get(booking.customer_id)
+    return render_template("/bookings/show.html", name=booking.name, treatment_name=treatment.name, customer_name=customer.name, date=booking.date, time=booking.time)

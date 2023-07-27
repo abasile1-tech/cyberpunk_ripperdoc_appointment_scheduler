@@ -4,25 +4,28 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='style.css') }}"
-    />
+		rel="stylesheet"
+		href="{{ url_for('static', filename='style.css') }}"
+	/>
 	<title>Ripperdoc</title>
 </head>
 <body>
 	<nav>
 		<ul>
-		  <li>
+			<li>
 			<a href="/treatments">Treatments</a>
-		  </li>
-		  <li>
+			</li>
+			<li>
 			<a href="/customers">Customers</a>
-		  </li>
-		  <li>
+			</li>
+			<li>
 			<a href="/bookings">Bookings</a>
-		  </li>
+			</li>
+			<li>
+			<a href="/bookings/new">Book an Appointment</a>
+			</li>
 		</ul>
-	  </nav>
+		</nav>
 	{% block content %}
 		
 	{% endblock content %}

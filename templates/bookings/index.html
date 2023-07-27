@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<h1>Bookings</h1>
+	{% for booking in bookings %}
+		<a href="/bookings/{{ booking.id }}">{{ booking.name }}</a>
+	{% endfor %}
+{% endblock content %}

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Add a Booking</h1>
+
+<form action="/bookings" method="post">
+	<label for="customer_id">Select a customer:</label>
+		<select name="customer_id" id="customer_id">
+			{% for customer in customers %}
+			<option value="{{ customer.id }}">{{ customer.name }}</option>
+			{% endfor %}
+		</select>
+	
+	<label for="treatment_id">Select a treatment:</label>
+		<select name="treatment_id" id="treatment_id">
+			{% for treatment in treatments %}
+			<option value="{{ treatment.id }}">{{ treatment.name }}</option>
+			{% endfor %}
+		</select>
+
+	<label for="name">Name:</label>
+	<input type="text" name="name">
+
+	<label for="date">Date:</label>
+	<input type="text" name="date">
+
+	<label for="time">Time:</label>
+	<input type="text" name="time">
+
+	<input type='submit' value="Book">
+</form>
+
+{% endblock %}
