@@ -6,11 +6,13 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
+USER = os.getenv('USER')
 PASSWORD = os.getenv('PASSWORD')
+DATABASE = os.getenv('DATABASE')
 
 app = Flask(__name__)
 
-app.config["SQLALCHEMY_DATABASE_URI"] = f"postgresql://postgres:{PASSWORD}@localhost:5432/cyberpunk_ripperdoc_appointment_scheduler"
+app.config["SQLALCHEMY_DATABASE_URI"] = f"postgresql://{USER}:{PASSWORD}@localhost:5432/{DATABASE}"
 app.config["SQLALCHEMY_ECHO"] = True
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
