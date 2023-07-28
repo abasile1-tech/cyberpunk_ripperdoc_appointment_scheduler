@@ -3,10 +3,10 @@
 {% block content %}
 	<h1>{{ name}}</h1>
 	<ul>
-		<a href="/treatments/{{treatment_id}}"><li>{{ treatment_name }}</li></a>
-		<a href="/customers/{{customer_id}}"><li>{{ customer_name }}</li></a>
-		<li>{{ date }}</li>
-		<li>{{ time }}</li>
+		<li>Customer: <a href="/customers/{{customer_id}}">{{ customer_name }}</a></li>
+		<li>Treatment: <a href="/treatments/{{treatment_id}}">{{ treatment_name }}</a></li>
+		<li>Date: {{ date }}</li>
+		<li>Time: {{ time }}</li>
 	</ul>
 	
 {% endblock content %}

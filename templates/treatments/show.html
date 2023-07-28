@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
-	<h1>{{ treatment.name}}</h1>
+	<h1>Treatment: {{ treatment.name }}</h1>
+	<h2>Duration: {{ treatment.duration }} minutes</h2>
+	<h3>Customers Signed Up for This Treatment:</h3>
 	<ul>
 	{% for customer in customers %}
 		<a href="/customers/{{customer.id}}"><li>{{ customer.name }}</li></a>

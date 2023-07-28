@@ -9,43 +9,43 @@ bookings_blueprint = Blueprint("bookings", __name__)
 
 @bookings_blueprint.route("/bookings")
 def bookings():
-    bookings = Booking.query.all()
-    return render_template("bookings/index.html", bookings = bookings)
+	bookings = Booking.query.all()
+	return render_template("bookings/index.html", bookings = bookings)
 
 # NEW
 # GET '/bookings/new'
 @bookings_blueprint.route("/bookings/new", methods=['GET'])
 def new_booking():
-    customers = Customer.query.all()
-    treatments = Treatment.query.all()
-    return render_template("bookings/new.html", customers = customers, treatments = treatments)
+	customers = Customer.query.all()
+	treatments = Treatment.query.all()
+	return render_template("bookings/new.html", customers = customers, treatments = treatments)
 
 # CREATE
 # POST '/bookings'
 @bookings_blueprint.route("/bookings",  methods=['POST'])
 def create_booking():
-    customer_id = request.form['customer_id']
-    treatment_id = request.form['treatment_id']
-    name = request.form['name']
-    date = request.form['date']
-    time = request.form['time']
-    booking = Booking(customer_id = customer_id, treatment_id = treatment_id, name=name, date=date, time=time)
-    db.session.add(booking)
-    db.session.commit()
-    return redirect('/bookings')
+	customer_id = request.form['customer_id']
+	treatment_id = request.form['treatment_id']
+	name = request.form['name']
+	date = request.form['date']
+	time = request.form['time']
+	booking = Booking(customer_id = customer_id, treatment_id = treatment_id, name=name, date=date, time=time)
+	db.session.add(booking)
+	db.session.commit()
+	return redirect('/bookings')
 
 
 # DELETE
 # DELETE '/bookings/<id>/delete'
 @bookings_blueprint.route("/bookings/<id>/delete", methods=['POST'])
 def delete_booking(id):
-    Booking.query.filter_by(id = id).delete()
-    db.session.commit()
-    return redirect('/bookings')
+	Booking.query.filter_by(id = id).delete()
+	db.session.commit()
+	return redirect('/bookings')
 
 @bookings_blueprint.route("/bookings/<id>")
 def show(id):
-    booking = Booking.query.get(id)
-    treatment=Treatment.query.get(booking.treatment_id)
-    customer=Customer.query.get(booking.customer_id)
-    return render_template("/bookings/show.html", name=booking.name, treatment_name=treatment.name, customer_name=customer.name, date=booking.date, time=booking.time, treatment_id=treatment.id, customer_id=customer.id)
+	booking = Booking.query.get(id)
+	treatment=Treatment.query.get(booking.treatment_id)
+	customer=Customer.query.get(booking.customer_id)
+	return render_template("/bookings/show.html", name=booking.name, treatment_name=treatment.name, customer_name=customer.name, date=booking.date, time=booking.time, treatment_id=treatment.id, customer_id=customer.id)

@@ -1,17 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Customers</h1>
-
-<table>
-	<tr>
-		<th>Name</th>
-	
-	</tr>
-	{% for customer in customers %}
-	<tr>
-		<td><a href="/customers/{{ customer.id }}"> {{customer.name}} </a></td>
-	</tr>
-	{% endfor %}
-</table>
+<h1>Customers:</h1>
+<ul>
+{% for customer in customers %}
+	<a href="/customers/{{customer.id}}"><li>{{ customer.name }}</li></a>
+{% endfor %}
+</ul>
 {% endblock %}
