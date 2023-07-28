@@ -49,3 +49,28 @@ def show(id):
 	treatment=Treatment.query.get(booking.treatment_id)
 	customer=Customer.query.get(booking.customer_id)
 	return render_template("/bookings/show.html", name=booking.name, treatment_name=treatment.name, customer_name=customer.name, date=booking.date, time=booking.time, treatment_id=treatment.id, customer_id=customer.id, booking_id=booking.id)
+
+@bookings_blueprint.route("/bookings/<id>/edit")
+def edit_booking(id):
+	booking = Booking.query.get(id)
+	customers = Customer.query.all()
+	treatments = Treatment.query.all()
+	return render_template('bookings/edit.html', booking=booking, customers=customers, treatments=treatments)
+
+@bookings_blueprint.route("/bookings/<id>", methods=["POST"])
+def update_booking(id):
+	name = request.form['name']
+	date = request.form['date']
+	time = request.form['time']
+	customer_id = request.form['customer_id']
+	treatment_id = request.form['treatment_id']
+	
+	booking = Booking.query.get(id)
+	booking.name = name
+	booking.date = date
+	booking.time = time
+	booking.customer_id = customer_id
+	booking.treatment_id = treatment_id
+
+	db.session.commit()
+	return redirect('/bookings')

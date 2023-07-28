@@ -19,6 +19,8 @@
 	{% endfor %}
 </ul>
 
+<a href="/customers/{{ customer.id }}/edit"><button>Edit {{ customer.name }}</button></a>
+
 <form class="form-inline" action="/customers/{{customer.id}}/delete" method="POST">
 	<input type="submit" value="Delete {{ customer.name }}">
 </form>

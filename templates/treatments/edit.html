@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Edit: {{ treatment.name }}</h1>
+
+<form action="/treatments/{{ treatment.id }}" method="post">
+	<div>
+		<label for="name">Name:</label>
+		<input 
+			type="text" 
+			name="name" 
+			id="name" 
+			value="{{ treatment.name }}"
+			required 
+			autofocus
+		/>
+	</div>
+	<div>
+		<label for="duration">Duration:</label>
+		<input 
+			type="number" 
+			name="duration" 
+			id="duration" 
+			value="{{ treatment.duration }}"
+			required 
+		/>
+	</div>
+	<button type="submit">Update Treatment</button>
+</form>
+	
+{% endblock content %}

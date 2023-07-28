@@ -45,3 +45,20 @@ def delete_treatment(id):
 	Treatment.query.filter_by(id = id).delete()
 	db.session.commit()
 	return redirect('/treatments')
+
+@treatments_blueprint.route("/treatments/<id>/edit")
+def edit_treatment(id):
+	treatment = Treatment.query.get(id)
+	return render_template('treatments/edit.html', treatment=treatment)
+
+@treatments_blueprint.route("/treatments/<id>", methods=["POST"])
+def update_treatment(id):
+	name = request.form['name']
+	duration = request.form['duration']
+	
+	treatment = Treatment.query.get(id)
+	treatment.name = name
+	treatment.duration = duration
+
+	db.session.commit()
+	return redirect('/treatments')
