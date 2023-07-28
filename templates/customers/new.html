@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Add a Customer</h1>
+
+<form action="/customers" method="post">
+	<ul>
+	<li>
+	<label for="name">Name:</label>
+	<input type="text" name="name" placeholder="Enter a name:">
+	</li>
+	<li><input type='submit' value="Add Customer">
+	</li>
+	</ul>
+</form>
+
+{% endblock %}
