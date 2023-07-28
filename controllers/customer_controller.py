@@ -44,3 +44,18 @@ def delete_customer(id):
 	Customer.query.filter_by(id = id).delete()
 	db.session.commit()
 	return redirect('/customers')
+
+@customers_blueprint.route("/customers/<id>/edit")
+def edit_customer(id):
+	customer = Customer.query.get(id)
+	return render_template('customers/edit.html', customer=customer)
+
+@customers_blueprint.route("/customers/<id>", methods=["POST"])
+def update_customer(id):
+	name = request.form['name']
+	
+	customer = Customer.query.get(id)
+	customer.name = name
+
+	db.session.commit()
+	return redirect('/customers')
