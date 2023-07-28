@@ -15,4 +15,5 @@ def customers():
 def show(id):
     customer = Customer.query.get(id)
     treatments = Treatment.query.join(Booking).filter(Booking.customer_id == id)
-    return render_template("customers/show.html", customer=customer, treatments=treatments)
+    bookings = Booking.query.filter(Booking.customer_id == id)
+    return render_template("customers/show.html", customer=customer, treatments=treatments, bookings=bookings)

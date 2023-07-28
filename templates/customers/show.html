@@ -3,11 +3,19 @@
 {% block content %}
 <h1> {{customer.name}} </h1>
 
-<h3>Bookings:</h3>
+<h3>Treatments:</h3>
 
 <ul>
 	{% for treatment in treatments  %}
-	<li>{{treatment.name}}</li>
+	<a href="/treatments/{{treatment.id}}"><li>{{treatment.name}}</li></a>
+	{% endfor %}
+</ul>
+
+<h3>Bookings:</h3>
+
+<ul>
+	{% for booking in bookings  %}
+	<a href="/bookings/{{booking.id}}"><li>{{booking.name}}</li></a>
 	{% endfor %}
 </ul>
 
