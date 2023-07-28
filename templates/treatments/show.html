@@ -9,4 +9,8 @@
 		<a href="/customers/{{customer.id}}"><li>{{ customer.name }}</li></a>
 	{% endfor %}
 	</ul>
+
+	<form class="form-inline" action="/treatments/{{treatment.id}}/delete" method="POST">
+		<input type="submit" value="Delete {{ treatment.name }}">
+	</form>
 {% endblock content %}
