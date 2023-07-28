@@ -41,6 +41,7 @@ def create_treatment():
 # DELETE '/treatments/<id>/delete'
 @treatments_blueprint.route("/treatments/<id>/delete", methods=['POST'])
 def delete_treatment(id):
+	Booking.query.filter_by(treatment_id = id).delete()
 	Treatment.query.filter_by(id = id).delete()
 	db.session.commit()
 	return redirect('/treatments')

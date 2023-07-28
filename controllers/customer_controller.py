@@ -40,6 +40,7 @@ def create_customer():
 # DELETE '/customers/<id>/delete'
 @customers_blueprint.route("/customers/<id>/delete", methods=['POST'])
 def delete_customer(id):
+	Booking.query.filter_by(customer_id = id).delete()
 	Customer.query.filter_by(id = id).delete()
 	db.session.commit()
 	return redirect('/customers')
