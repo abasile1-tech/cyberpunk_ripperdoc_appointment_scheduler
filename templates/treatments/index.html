@@ -2,7 +2,9 @@
 
 {% block content %}
 	<h1>Treatments</h1>
+	<ul>
 	{% for treatment in treatments %}
-		<a href="/treatments/{{ treatment.id }}">{{ treatment.name }}</a>
+		<li><a href="/treatments/{{ treatment.id }}">{{ treatment.name }}</a></li>
 	{% endfor %}
+	</ul>
 {% endblock content %}

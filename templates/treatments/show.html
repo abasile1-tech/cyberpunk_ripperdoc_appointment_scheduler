@@ -2,7 +2,9 @@
 
 {% block content %}
 	<h1>{{ treatment.name}}</h1>
+	<ul>
 	{% for customer in customers %}
-		{{ customer.name }}
+		<li>{{ customer.name }}</li>
 	{% endfor %}
+	</ul>
 {% endblock content %}

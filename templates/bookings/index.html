@@ -2,7 +2,10 @@
 
 {% block content %}
 	<h1>Bookings</h1>
-	{% for booking in bookings %}
-		<a href="/bookings/{{ booking.id }}">{{ booking.name }}</a>
-	{% endfor %}
+	<ul>
+		{% for booking in bookings %}
+		<li><a href="/bookings/{{ booking.id }}">{{ booking.name }}</a></li>
+		{% endfor %}
+	</ul>
+	
 {% endblock content %}
