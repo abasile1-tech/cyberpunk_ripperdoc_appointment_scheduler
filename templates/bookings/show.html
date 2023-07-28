@@ -3,8 +3,8 @@
 {% block content %}
 	<h1>{{ name}}</h1>
 	<ul>
-		<li>{{ treatment_name }}</li>
-		<li>{{ customer_name }}</li>
+		<a href="/treatments/{{treatment_id}}"><li>{{ treatment_name }}</li></a>
+		<a href="/customers/{{customer_id}}"><li>{{ customer_name }}</li></a>
 		<li>{{ date }}</li>
 		<li>{{ time }}</li>
 	</ul>
