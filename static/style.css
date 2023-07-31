@@ -84,3 +84,17 @@ input[type="submit"] {
 	justify-content: center;
 	align-items: center;
 }
+
+#treatments_container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.treatment_container {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid yellow;
+	text-align: center;
+	margin: 20px;
+}

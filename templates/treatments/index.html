@@ -2,18 +2,23 @@
 
 {% block content %}
 	<h1>Treatments</h1>
-	<ul>
+	<div id="treatments_container">
 	{% for treatment in treatments %}
-		<li><a href="/treatments/{{ treatment.id }}">{{ treatment.name }}</a></li>
+		<div class="treatment_container">
+		<a href="/treatments/{{ treatment.id }}">{{ treatment.name }}</a>
 		{% if loop.index == 1 %}
 			<img src="../../static/images/mantis_blades.jpg" alt="mantis blades" class="treatment_image">
+			</div>
 		{% elif loop.index == 2 %}
 			<img src="../../static/images/gorilla_arms.jpg" alt="gorilla arms" class="treatment_image">
+			</div>
 		{% elif loop.index == 3 %}
 			<img src="../../static/images/sandevistan.jpg" alt="sandevistan" class="treatment_image">
+			</div>
 		{% else %}
 			<img src="../../static/images/plus_sign.jpg" alt="plus sign" class="treatment_image">
+			</div>
 		{% endif %}
 	{% endfor %}
-	</ul>
+	</div>
 {% endblock content %}
