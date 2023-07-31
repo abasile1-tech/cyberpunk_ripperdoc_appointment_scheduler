@@ -1,8 +1,14 @@
 {% extends 'base.html' %}
 {% block content %}
-	<h1>Welcome to the Ripperdoc</h1>
-	<a href="/admin-portal">Admin Portal</a>
-	<a href="/customer-portal">Customer Portal</a>
-	<a href="/treatments">Treatments</a>
-	<a href="/bookings/new">Book an Appointment</a>
+	<header>
+		<h1>Welcome to the Ripperdoc</h1>
+		<nav>
+			<a href="/admin-portal">Admin Portal</a>
+			<a href="/customer-portal">Customer Portal</a>
+		</nav>
+	</header>
+	<main>
+		<a href="/treatments">Browse Our Procedures</a>
+		<a href="/bookings/new">Book an Appointment</a>
+	</main>
 {% endblock content %}
