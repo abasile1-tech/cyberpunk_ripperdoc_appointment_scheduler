@@ -8,8 +8,27 @@ body {
 	color: yellow;
 }
 
+a {
+	text-decoration: none;
+}
+
 nav {
 	font-size: 20px;
+}
+
+.nav_link {
+	background-color: black;
+	border: 1px solid skyblue;
+	color: skyblue;
+	padding: 5px;
+}
+
+.admin_nav_link {
+	background-color: black;
+	border: 1px solid skyblue;
+	color: skyblue;
+	padding: 10px;
+	margin: 10px;
 }
 
 header {
@@ -44,7 +63,7 @@ input[type="text"], select {
 	border: 1px solid black;
   }
 
-input[type="submit"] {
+input[type="submit"], button {
 	color: red;
 	border: 1px solid red;
 	background: black;
@@ -77,8 +96,8 @@ input[type="submit"] {
 }
 
 #booking_link {
-	border: 2px solid lightskyblue;
-	color: lightskyblue;
+	border: 2px solid skyblue;
+	color: skyblue;
 	padding: 0.7rem;
 }
 
@@ -105,8 +124,14 @@ input[type="submit"] {
 }
 
 .treatment_link {
-	border: 1px solid lightskyblue;
-	color: lightblue;
+	border: 1px solid skyblue;
+	color: skyblue;
 	padding: 5px;
 	margin: 10px;
+}
+
+.flex_list {
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
 }
