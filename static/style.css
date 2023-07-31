@@ -8,6 +8,10 @@ body {
 	color: yellow;
 }
 
+a {
+	text-decoration: none;
+}
+
 nav {
 	font-size: 20px;
 }
@@ -16,6 +20,15 @@ nav {
 	background-color: black;
 	border: 1px solid skyblue;
 	color: skyblue;
+	padding: 5px;
+}
+
+.admin_nav_link {
+	background-color: black;
+	border: 1px solid skyblue;
+	color: skyblue;
+	padding: 10px;
+	margin: 10px;
 }
 
 header {
@@ -115,4 +128,10 @@ input[type="submit"] {
 	color: skyblue;
 	padding: 5px;
 	margin: 10px;
+}
+
+.flex_list {
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
 }
