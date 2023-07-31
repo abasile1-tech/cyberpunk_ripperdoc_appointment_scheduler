@@ -30,6 +30,8 @@ ul {
 input[type="text"], select {
 	background-color: yellow;
 	color: black;
+	width: 100%;
+	border: 1px solid black;
   }
 
 input[type="submit"] {
@@ -56,10 +58,12 @@ input[type="submit"] {
 
 #hero_form {
 	position: absolute;
-	top: 10%;
-	left: 10%;
+	top: 5%;
+	left: 5%;
 	color: yellow;
 	padding: 0.7rem;
+	width: 150px;
+	height: 60px;
 }
 
 #booking_link {
