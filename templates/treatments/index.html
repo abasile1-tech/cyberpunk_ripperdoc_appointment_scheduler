@@ -1,11 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
-	<h1>Treatments</h1>
+	<h1>Our Procedures:</h1>
 	<div id="treatments_container">
 	{% for treatment in treatments %}
 		<div class="treatment_container">
-		<a href="/treatments/{{ treatment.id }}">{{ treatment.name }}</a>
+		<div>
+		<a href="/treatments/{{ treatment.id }}" class="treatment_link">{{ treatment.name }}</a>
+		</div>
 		{% if loop.index == 1 %}
 			<img src="../../static/images/mantis_blades.jpg" alt="mantis blades" class="treatment_image">
 			</div>

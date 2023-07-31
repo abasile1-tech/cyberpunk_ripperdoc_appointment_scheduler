@@ -24,6 +24,7 @@ img {
 .treatment_image {
 	width: 200px;
 	height: 200px;
+	padding: 10px;
 }
 
 ul {
@@ -95,4 +96,12 @@ input[type="submit"] {
 	border: 1px solid yellow;
 	text-align: center;
 	margin: 20px;
+	padding: 10px;
+}
+
+.treatment_link {
+	border: 1px solid lightskyblue;
+	color: lightblue;
+	padding: 5px;
+	margin: 10px;
 }
