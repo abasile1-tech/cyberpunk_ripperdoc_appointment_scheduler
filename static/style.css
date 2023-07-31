@@ -21,6 +21,13 @@ img {
 	max-height: 100%;
 }
 
+.treatment_image {
+	width: auto;
+	height: auto;
+	max-height: 200px;
+	max-width: 200px;
+}
+
 ul {
 	list-style-type: none;
 	margin: 0;

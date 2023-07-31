@@ -12,8 +12,9 @@ def seed():
 	customer2 = Customer(name="Maine")
 	customer3 = Customer(name="David Martinez")
 
-	treatment1 = Treatment(name="Mantis Blades", duration="840")
-	treatment2 = Treatment(name="Gorilla Arms", duration="720")
+	treatment1 = Treatment(name="Mantis Blades", duration=840)
+	treatment2 = Treatment(name="Gorilla Arms", duration=720)
+	treatment3 = Treatment(name="Sandevistan", duration=900)
 
 	db.session.add(customer1)
 	db.session.add(customer2)
@@ -21,5 +22,6 @@ def seed():
 
 	db.session.add(treatment1)
 	db.session.add(treatment2)
+	db.session.add(treatment3)
 
 	db.session.commit()
