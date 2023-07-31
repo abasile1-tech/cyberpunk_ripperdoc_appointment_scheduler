@@ -2,9 +2,9 @@
 
 {% block content %}
 <h1>Customers:</h1>
-<ul>
+<div class="flex_list">
 {% for customer in customers %}
-	<a href="/customers/{{customer.id}}"><li>{{ customer.name }}</li></a>
+	<a href="/customers/{{customer.id}}" class="admin_nav_link">{{ customer.name }}</a>
 {% endfor %}
-</ul>
+</div>
 {% endblock %}
