@@ -15,3 +15,30 @@ header {
 	width: 100vw;
 	align-items: center;
 }
+
+#hero_container {
+	position: relative;
+	text-align: center;
+}
+
+#hero_text {
+	position: absolute;
+	bottom: 20%;
+	right: 20%;
+	background-color: yellow;
+	color: black;
+	padding: 0.7rem;
+	border: 2px solid black;
+}
+
+#booking_link {
+	border: 2px solid lightskyblue;
+	color: lightskyblue;
+	padding: 0.7rem;
+}
+
+#booking_div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
