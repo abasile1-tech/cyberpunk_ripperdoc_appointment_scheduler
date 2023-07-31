@@ -21,9 +21,27 @@ img {
 	max-height: 100%;
 }
 
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+input[type="text"], select {
+	background-color: yellow;
+	color: black;
+  }
+
+input[type="submit"] {
+	color: red;
+	border: 1px solid red;
+	background: black;
+	padding: 0.4rem;
+}
+
 .hero_container {
 	position: relative;
-	text-align: center;
+	/* text-align: center; */
 }
 
 #hero_text {
