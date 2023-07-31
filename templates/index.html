@@ -1,4 +1,20 @@
 {% extends 'base.html' %}
 {% block content %}
-	<h1>Home Page</h1>
+	<header>
+		<h1>Welcome to the Ripperdoc</h1>
+		<nav>
+			<a href="/admin-portal">Admin Portal</a>
+			<a href="/customer-portal">Customer Portal</a>
+		</nav>
+	</header>
+	<main>
+		<div class="hero_container">
+			<img src="../static/images/ripperdoc.jpg" alt="ripperdoc">
+			<h3><a href="/treatments" id="hero_text">Browse Our Procedures</a></h3>
+		</div>
+		<div id="booking_div">
+			<h2><a href="/bookings/new" id="booking_link">Book an Appointment</a></h2>
+		</div>
+		
+	</main>
 {% endblock content %}
