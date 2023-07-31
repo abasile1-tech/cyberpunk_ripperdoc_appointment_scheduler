@@ -12,6 +12,12 @@ nav {
 	font-size: 20px;
 }
 
+.nav_link {
+	background-color: black;
+	border: 1px solid skyblue;
+	color: skyblue;
+}
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -77,8 +83,8 @@ input[type="submit"] {
 }
 
 #booking_link {
-	border: 2px solid lightskyblue;
-	color: lightskyblue;
+	border: 2px solid skyblue;
+	color: skyblue;
 	padding: 0.7rem;
 }
 
@@ -105,8 +111,8 @@ input[type="submit"] {
 }
 
 .treatment_link {
-	border: 1px solid lightskyblue;
-	color: lightblue;
+	border: 1px solid skyblue;
+	color: skyblue;
 	padding: 5px;
 	margin: 10px;
 }
