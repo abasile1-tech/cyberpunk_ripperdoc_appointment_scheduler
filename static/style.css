@@ -3,6 +3,18 @@
 	padding: 0;
 }
 
+h1 {
+	padding: 10px;
+}
+
+h2 {
+	padding: 10px;
+}
+
+h3 {
+	padding: 10px;
+}
+
 body {
 	background-color: black;
 	color: yellow;
@@ -21,7 +33,7 @@ nav {
 	border: 1px solid skyblue;
 	color: skyblue;
 	padding: 5px;
-	margin: 5px;
+	margin: 10px;
 	width: 150px;
 }
 
@@ -80,7 +92,7 @@ input[type="submit"], button {
 	border: 1px solid red;
 	background: black;
 	padding: 5px;
-	margin: 5px;
+	margin: 10px;
 	width: 150px;
 }
 
@@ -153,6 +165,7 @@ input[type="submit"], button {
 .main_content {
 	display: flex;
 	justify-content: space-evenly;
+	/* flex-wrap: wrap; */
 }
 
 #big_plus_sign {
@@ -160,8 +173,8 @@ input[type="submit"], button {
 }
 
 .booking_image {
-	max-width: 300px;
-	max-height: 300px;
+	max-width: 30%;
+	max-height: 100%;
 }
 
 .space_between {
