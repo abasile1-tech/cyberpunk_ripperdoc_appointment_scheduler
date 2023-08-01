@@ -63,8 +63,8 @@ A customer should be able to create a `Booking` with a name, date, time, and `Tr
 
 ### Extensions:
 
-- Date and time could be handled as date type instead of as strings
-- A treatment could have a length of time
+- :white_check_mark: Date and time could be handled as date type instead of as strings
+- :white_check_mark: A treatment could have a length of time
 - Could you try preventing double booking?
 
 ## :wrench: The Technologies I Used:
