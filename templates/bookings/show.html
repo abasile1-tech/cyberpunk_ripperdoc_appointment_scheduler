@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<main>
+<main class="main_content_booking">
 	<div class="flex_list">
 	<h1>{{ name}}</h1>
 	<h3>Customer: </h3>
@@ -15,5 +15,24 @@
 		<input type="submit" value="Delete This Booking">
 	</form>
 	</div>
+	{% if customer_name == "V" %}
+		<img src="../../static/images/v.jpg" alt="v" class="booking_image">
+	{% elif customer_name == "Maine" %}
+		<img src="../../static/images/maine.jpg" alt="maine" class="booking_image">
+	{% elif customer_name == "David Martinez" %}
+		<img src="../../static/images/david_martinez.png" alt="david martinez" class="booking_image">
+	{% else %}
+		<img src="../../static/images/plus_sign.png" alt="plus sign" class="booking_image">
+	{% endif %}
+	
+	{% if treatment_name == "Mantis Blades" %}
+		<img src="../../static/images/mantis_blades_big.jpg" alt="mantis blades" class="booking_image">
+	{% elif treatment_name == "Gorilla Arms" %}
+		<img src="../../static/images/gorilla_arms_big.jpg" alt="gorilla arms" class="booking_image">
+	{% elif treatment_name == "Sandevistan" %}
+		<img src="../../static/images/sandevistan_big.png" alt="sandevistan" class="booking_image">
+	{% else %}
+		<img src="../../static/images/plus_sign.png" alt="plus sign" class="booking_image">
+	{% endif %}
 </main>
 {% endblock content %}

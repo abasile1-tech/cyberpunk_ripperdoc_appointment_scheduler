@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<main class="main_content">
+<main class="main_content_booking">
 	<div class="flex_list">
 	<h1> {{customer.name}} </h1>
 	<h3>Treatments:</h3>
@@ -19,11 +19,11 @@
 	</form>
 	</div>
 	{% if customer.name == "V" %}
-		<img src="../../static/images/v.jpg" alt="david martinez" class="new_image">
+		<img src="../../static/images/v.jpg" alt="v" class="new_image">
 	{% elif customer.name == "Maine" %}
-		<img src="../../static/images/maine.jpg" alt="gorilla arms" class="new_image">
+		<img src="../../static/images/maine.jpg" alt="maine" class="new_image">
 	{% elif customer.name == "David Martinez" %}
-		<img src="../../static/images/david_martinez.png" alt="sandevistan" class="new_image">
+		<img src="../../static/images/david_martinez.png" alt="david martinez" class="new_image">
 	{% else %}
 		<img src="../../static/images/plus_sign.png" alt="plus sign" id="big_plus_sign">
 	{% endif %}
