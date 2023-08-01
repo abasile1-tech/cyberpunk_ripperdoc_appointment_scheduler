@@ -1,28 +1,32 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1> {{customer.name}} </h1>
+<main class="main_content">
+	<div class="flex_list">
+	<h1> {{customer.name}} </h1>
+	<h3>Treatments:</h3>
+		{% for treatment in treatments  %}
+		<a href="/treatments/{{treatment.id}}" class="nav_link">{{treatment.name}}</a>
+		{% endfor %}
+	<h3>Bookings:</h3>
+		{% for booking in bookings  %}
+		<a href="/bookings/{{booking.id}}" class="nav_link">{{booking.name}}</a>
+		{% endfor %}
+	<a href="/customers/{{ customer.id }}/edit"><button>Edit {{ customer.name }}</button></a>
 
-<h3>Treatments:</h3>
-
-<ul>
-	{% for treatment in treatments  %}
-	<a href="/treatments/{{treatment.id}}"><li>{{treatment.name}}</li></a>
-	{% endfor %}
-</ul>
-
-<h3>Bookings:</h3>
-
-<ul>
-	{% for booking in bookings  %}
-	<a href="/bookings/{{booking.id}}"><li>{{booking.name}}</li></a>
-	{% endfor %}
-</ul>
-
-<a href="/customers/{{ customer.id }}/edit"><button>Edit {{ customer.name }}</button></a>
-
-<form class="form-inline" action="/customers/{{customer.id}}/delete" method="POST">
-	<input type="submit" value="Delete {{ customer.name }}">
-</form>
+	<form class="form-inline" action="/customers/{{customer.id}}/delete" method="POST">
+		<input type="submit" value="Delete {{ customer.name }}">
+	</form>
+	</div>
+	{% if customer.name == "V" %}
+		<img src="../../static/images/v.jpg" alt="david martinez" class="new_image">
+	{% elif customer.name == "Maine" %}
+		<img src="../../static/images/maine.jpg" alt="gorilla arms" class="new_image">
+	{% elif customer.name == "David Martinez" %}
+		<img src="../../static/images/david_martinez.png" alt="sandevistan" class="new_image">
+	{% else %}
+		<img src="../../static/images/plus_sign.png" alt="plus sign" id="big_plus_sign">
+	{% endif %}
+</main>
 
 {% endblock %}
