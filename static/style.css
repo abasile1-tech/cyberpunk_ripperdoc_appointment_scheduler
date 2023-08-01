@@ -76,6 +76,10 @@ img {
 	padding: 10px;
 }
 
+.portal_image {
+	max-width: 70%;
+}
+
 ul {
 	list-style-type: none;
 	margin: 0;
@@ -162,12 +166,19 @@ input[type="submit"], button {
 	display: flex;
 	flex-direction: column;
 	width: fit-content;
+	min-width: fit-content;
 }
 
 .main_content {
 	display: flex;
 	justify-content: space-evenly;
 	/* flex-wrap: wrap; */
+}
+
+.main_content_booking {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
 }
 
 #big_plus_sign {
