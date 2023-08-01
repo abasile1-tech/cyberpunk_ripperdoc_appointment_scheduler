@@ -137,7 +137,7 @@ input[type="submit"], button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 20px;
+	/* margin: 20px; */
 }
 
 #treatments_container {
@@ -188,12 +188,19 @@ input[type="submit"], button {
 .booking_image {
 	max-width: 30%;
 	max-height: 100%;
+	min-width: 500px;
+}
+
+.booking_image_single {
+	max-width: 60%;
+	max-height: 100%;
+	min-width: 500px;
 }
 
 .space_between {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin: 10px;
-	padding: 10px;
+	/* margin: 10px;
+	padding: 10px; */
 }

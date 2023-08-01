@@ -3,15 +3,15 @@
 {% block content %}
 <h1>Add a Customer</h1>
 
-<main class="main_content">
+<main class="main_content_booking">
+<div class="flex_list"></div>
 <form action="/customers" method="post">
-	<div class="flex_list">
 	<label for="name">Name:</label>
 	<input type="text" name="name" placeholder="Enter a name:">
 	<input type='submit' value="Add Customer">
-	</div>
 </form>
-<img src="../../static/images/new_customers.jpg" alt="new customers" class="new_image">
+</div>
+<img src="../../static/images/new_customers.jpg" alt="new customers" class="booking_image_single">
 </main>
 
 {% endblock %}

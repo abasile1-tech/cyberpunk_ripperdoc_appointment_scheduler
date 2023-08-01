@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
+<main class="main_content_booking">
+<div class="flex_list">
 <h1>Edit: {{ treatment.name }}</h1>
 
 <form action="/treatments/{{ treatment.id }}" method="post">
@@ -28,5 +29,8 @@
 	</div>
 	<button type="submit">Update Treatment</button>
 </form>
+</div>
+<img src="../../static/gifs/gears-spinning.gif" alt="gears spinning" class="booking_image">
+</main>
 	
 {% endblock content %}
