@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 <h1>Customer Portal</h1>
+<main class="main_content">
 <div class="flex_list">
 	<a href="/treatments" class="admin_nav_link">Treatments</a>
 	<a href="/customers" class="admin_nav_link">Customers</a>
@@ -9,4 +10,6 @@
 	<a href="/customers/new" class="admin_nav_link">Add a Customer</a>
 	<a href="/treatments/new" class="admin_nav_link">Add a Treatment</a>
 </div>
+<img src="../static/images/office.jpg" alt="office">
+</main>
 {% endblock content %}

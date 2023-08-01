@@ -2,10 +2,13 @@
 
 {% block content %}
 	<h1>Bookings</h1>
+	<main class="main_content">
 	<div class="flex_list">
 		{% for booking in bookings %}
 		<a href="/bookings/{{ booking.id }}" class="admin_nav_link">{{ booking.name }}</a>
 		{% endfor %}
 	</div>
+	<img src="../../static/images/secretary.jpg" alt="secretary">
+	</main>
 	
 {% endblock content %}

@@ -135,3 +135,8 @@ input[type="submit"], button {
 	flex-direction: column;
 	width: fit-content;
 }
+
+.main_content {
+	display: flex;
+	justify-content: space-evenly;
+}
