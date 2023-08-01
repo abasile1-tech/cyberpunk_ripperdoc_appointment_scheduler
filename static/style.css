@@ -153,3 +153,8 @@ input[type="submit"], button {
 #big_plus_sign {
 	max-width: 50%;
 }
+
+.booking_image {
+	max-width: 300px;
+	max-height: 300px;
+}
