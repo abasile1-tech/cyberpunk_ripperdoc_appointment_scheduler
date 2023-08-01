@@ -44,6 +44,11 @@ img {
 	max-height: 100%;
 }
 
+.new_image {
+	max-width: 75%;
+	max-height: 75%;
+}
+
 .treatment_image {
 	width: 200px;
 	height: 200px;
