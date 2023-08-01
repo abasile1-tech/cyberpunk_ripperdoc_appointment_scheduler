@@ -21,6 +21,8 @@ nav {
 	border: 1px solid skyblue;
 	color: skyblue;
 	padding: 5px;
+	margin: 5px;
+	width: 150px;
 }
 
 .admin_nav_link {
@@ -72,7 +74,9 @@ input[type="submit"], button {
 	color: red;
 	border: 1px solid red;
 	background: black;
-	padding: 0.4rem;
+	padding: 5px;
+	margin: 5px;
+	width: 150px;
 }
 
 .hero_container {
@@ -144,4 +148,8 @@ input[type="submit"], button {
 .main_content {
 	display: flex;
 	justify-content: space-evenly;
+}
+
+#big_plus_sign {
+	max-width: 50%;
 }
