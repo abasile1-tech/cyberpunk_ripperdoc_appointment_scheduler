@@ -1,19 +1,32 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<main class="main_content">
+	<div class="flex_list">
 	<h1>Treatment: {{ treatment.name }}</h1>
 	<h2>Duration: {{ treatment.duration }} minutes</h2>
 	<h3>Customers Signed Up for This Treatment:</h3>
-	<ul>
+	
 	{% for customer in customers %}
-		<a href="/customers/{{customer.id}}"><li>{{ customer.name }}</li></a>
+		<a href="/customers/{{customer.id}}" class="nav_link">{{ customer.name }}</a>
 	{% endfor %}
-	</ul>
+	
 
 	<a href="/treatments/{{ treatment.id }}/edit"><button>Edit {{ treatment.name }}</button></a>
 
 	<form class="form-inline" action="/treatments/{{treatment.id}}/delete" method="POST">
 		<input type="submit" value="Delete {{ treatment.name }}">
 	</form>
+	</div>
+	{% if treatment.name == "Mantis Blades" %}
+		<img src="../../static/images/mantis_blades_big.jpg" alt="mantis blades" class="new_image">
+	{% elif treatment.name == "Gorilla Arms" %}
+		<img src="../../static/images/gorilla_arms_big.jpg" alt="gorilla arms" class="new_image">
+	{% elif treatment.name == "Sandevistan" %}
+		<img src="../../static/images/sandevistan_big.png" alt="sandevistan" class="new_image">
+	{% else %}
+		<img src="../../static/images/plus_sign.png" alt="plus sign" id="big_plus_sign">
+	{% endif %}
+</main>
 	
 {% endblock content %}

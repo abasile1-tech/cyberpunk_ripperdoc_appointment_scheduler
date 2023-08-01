@@ -3,19 +3,17 @@
 {% block content %}
 <h1>Add a Treatment</h1>
 
+<main class="main_content">
 <form action="/treatments" method="post">
-	<ul>
-	<li>
+	<div class="flex_list">
 	<label for="name">Name:</label>
 	<input type="text" name="name" placeholder="Enter a name:">
-	</li>
-	<li>
 	<label for="duration">Duration:</label>
 	<input type="number" name="duration">
-	</li>
-	<li><input type='submit' value="Add Treatment">
-	</li>
-	</ul>
+	<input type='submit' value="Add Treatment">
+	</div>
 </form>
+<img src="../../static/images/cyberware.jpg" alt="cyberware" class="new_image">
+</main>
 
 {% endblock %}
