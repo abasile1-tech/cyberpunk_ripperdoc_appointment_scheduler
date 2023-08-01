@@ -43,7 +43,12 @@ header {
 
 img {
 	width: 100%;
-	max-height: 100%;
+	max-height: 100vh;
+}
+
+#hero_image {
+	width: 100%;
+	max-height: 80vh;
 }
 
 .new_image {
@@ -157,4 +162,11 @@ input[type="submit"], button {
 .booking_image {
 	max-width: 300px;
 	max-height: 300px;
+}
+
+.space_between {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
+	padding: 10px;
 }
