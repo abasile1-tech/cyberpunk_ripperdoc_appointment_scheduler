@@ -1,19 +1,19 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<main class="main_content_booking">
+<main class="main_content_flex_wrap">
 	<div class="flex_list">
-	<h1>{{ name}}</h1>
-	<h3>Customer: </h3>
-	<a href="/customers/{{customer_id}}" class="nav_link">{{ customer_name }}</a>
-	<h3>Treatment: </h3>
-	<a href="/treatments/{{treatment_id}}" class="nav_link">{{ treatment_name }}</a>
-	<h3>Date: {{ date }}</h3>
-	<a href="/bookings/{{ booking_id }}/edit"><button>Edit This Booking</button></a>
+		<h1>{{ name}}</h1>
+		<h3>Customer: </h3>
+		<a href="/customers/{{customer_id}}" class="nav_link">{{ customer_name }}</a>
+		<h3>Treatment: </h3>
+		<a href="/treatments/{{treatment_id}}" class="nav_link">{{ treatment_name }}</a>
+		<h3>Date: {{ date }}</h3>
+		<a href="/bookings/{{ booking_id }}/edit"><button>Edit This Booking</button></a>
 
-	<form class="form-inline" action="/bookings/{{booking_id}}/delete" method="POST">
-		<input type="submit" value="Delete This Booking">
-	</form>
+		<form class="form-inline" action="/bookings/{{booking_id}}/delete" method="POST">
+			<input type="submit" value="Delete This Booking">
+		</form>
 	</div>
 	{% if customer_name == "V" %}
 		<img src="../../static/images/v.jpg" alt="v" class="booking_image">

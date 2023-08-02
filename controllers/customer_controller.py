@@ -19,14 +19,10 @@ def show(id):
 	bookings = Booking.query.filter(Booking.customer_id == id)
 	return render_template("customers/show.html", customer=customer, treatments=treatments, bookings=bookings)
 
-# NEW
-# GET '/customers/new'
 @customers_blueprint.route("/customers/new")
 def new_booking():
 	return render_template("customers/new.html")
 
-# CREATE
-# POST '/customers'
 @customers_blueprint.route("/customers",  methods=['POST'])
 def create_customer():
 	name = request.form['name']
@@ -35,9 +31,6 @@ def create_customer():
 	db.session.commit()
 	return redirect('/customers')
 
-
-# DELETE
-# DELETE '/customers/<id>/delete'
 @customers_blueprint.route("/customers/<id>/delete", methods=['POST'])
 def delete_customer(id):
 	Booking.query.filter_by(customer_id = id).delete()

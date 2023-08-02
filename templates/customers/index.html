@@ -2,12 +2,12 @@
 
 {% block content %}
 <h1>Customers:</h1>
-<main class="main_content_booking">
-<div class="flex_list">
-{% for customer in customers %}
-	<a href="/customers/{{customer.id}}" class="admin_nav_link">{{ customer.name }}</a>
-{% endfor %}
-</div>
-<img src="../../static/images/customers.jpg" alt="customers" class="booking_image_single">
+<main class="main_content_flex_wrap">
+	<div class="flex_list">
+		{% for customer in customers %}
+			<a href="/customers/{{customer.id}}" class="admin_nav_link">{{ customer.name }}</a>
+		{% endfor %}
+	</div>
+	<img src="../../static/images/customers.jpg" alt="customers" class="booking_image_single">
 </main>
 {% endblock %}

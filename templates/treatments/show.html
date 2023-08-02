@@ -1,22 +1,21 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<main class="main_content_booking">
+<main class="main_content_flex_wrap">
 	<div class="flex_list">
-	<h1>Treatment: {{ treatment.name }}</h1>
-	<h2>Duration: {{ treatment.duration }} minutes</h2>
-	<h3>Customers Signed Up for This Treatment:</h3>
-	
-	{% for customer in customers %}
-		<a href="/customers/{{customer.id}}" class="nav_link">{{ customer.name }}</a>
-	{% endfor %}
-	
+		<h1>Treatment: {{ treatment.name }}</h1>
+		<h2>Duration: {{ treatment.duration }} minutes</h2>
+		<h3>Customers Signed Up for This Treatment:</h3>
+		
+		{% for customer in customers %}
+			<a href="/customers/{{customer.id}}" class="nav_link">{{ customer.name }}</a>
+		{% endfor %}
+		
+		<a href="/treatments/{{ treatment.id }}/edit"><button>Edit {{ treatment.name }}</button></a>
 
-	<a href="/treatments/{{ treatment.id }}/edit"><button>Edit {{ treatment.name }}</button></a>
-
-	<form class="form-inline" action="/treatments/{{treatment.id}}/delete" method="POST">
-		<input type="submit" value="Delete {{ treatment.name }}">
-	</form>
+		<form class="form-inline" action="/treatments/{{treatment.id}}/delete" method="POST">
+			<input type="submit" value="Delete {{ treatment.name }}">
+		</form>
 	</div>
 	{% if treatment.name == "Mantis Blades" %}
 		<img src="../../static/images/mantis_blades_big.jpg" alt="mantis blades" class="new_image">
@@ -28,5 +27,4 @@
 		<img src="../../static/images/plus_sign.png" alt="plus sign" id="big_plus_sign">
 	{% endif %}
 </main>
-	
 {% endblock content %}

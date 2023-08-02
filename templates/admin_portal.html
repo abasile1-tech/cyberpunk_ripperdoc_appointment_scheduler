@@ -1,15 +1,15 @@
 {% extends 'base.html' %}
 {% block content %}
 	<h1>Admin Portal</h1>
-	<main class="main_content_booking">
-	<div class="flex_list">
-		<a href="/treatments" class="admin_nav_link">Treatments</a>
-		<a href="/customers" class="admin_nav_link">Customers</a>
-		<a href="/bookings" class="admin_nav_link">Bookings</a>
-		<a href="/bookings/new" class="admin_nav_link">Book an Appointment</a>
-		<a href="/customers/new" class="admin_nav_link">Add a Customer</a>
-		<a href="/treatments/new" class="admin_nav_link">Add a Treatment</a>
-	</div>
-	<img src="../static/images/office_with_doctor.jpg" alt="office with doctor" class="portal_image">
+	<main class="main_content_flex_wrap">
+		<div class="flex_list">
+			<a href="/treatments" class="admin_nav_link">Treatments</a>
+			<a href="/customers" class="admin_nav_link">Customers</a>
+			<a href="/bookings" class="admin_nav_link">Bookings</a>
+			<a href="/bookings/new" class="admin_nav_link">Book an Appointment</a>
+			<a href="/customers/new" class="admin_nav_link">Add a Customer</a>
+			<a href="/treatments/new" class="admin_nav_link">Add a Treatment</a>
+		</div>
+		<img src="../static/images/office_with_doctor.jpg" alt="office with doctor" class="portal_image">
 	</main>
 {% endblock content %}

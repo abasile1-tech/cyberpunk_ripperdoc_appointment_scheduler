@@ -1,64 +1,62 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-<main class="main_content_booking">
-<div class="flex_list">
-<h1>Edit: {{ booking.name }}</h1>
-<form action="/bookings/{{ booking.id }}" method="post">
-	<div>
-		<label for="name">Name:</label>
-		<input 
-			type="text" 
-			name="name" 
-			id="name" 
-			value="{{ booking.name }}"
-			required 
-			autofocus
-		/>
+<main class="main_content_flex_wrap">
+	<div class="flex_list">
+		<h1>Edit: {{ booking.name }}</h1>
+		<form action="/bookings/{{ booking.id }}" method="post">
+			<div>
+				<label for="name">Name:</label>
+				<input 
+					type="text" 
+					name="name" 
+					id="name" 
+					value="{{ booking.name }}"
+					required 
+					autofocus
+				/>
+			</div>
+			<div>
+				<label for="date">Date:</label>
+				<input 
+					type="datetime-local" 
+					name="date" 
+					id="date" 
+					value="{{ booking.date }}"
+					required 
+				/>
+			</div>
+			<div>
+				<label for="customer_id">Customer:</label>
+				<select name="customer_id">
+					{% for customer in customers %}
+						<option 
+						{% if booking.customer.id == customer.id %}
+							selected
+						{% endif %}
+						value="{{ customer.id }}">
+							{{ customer.name }}
+						</option>
+					{% endfor %}
+				</select>
+			</div>
+			<div>
+				<label for="treatment_id">Treatment:</label>
+				<select name="treatment_id">
+					{% for treatment in treatments %}
+						<option 
+							{% if booking.treatment.id == treatment.id %}
+								selected
+							{% endif %}
+							value="{{ treatment.id }}">
+							{{ treatment.name }}
+						</option>
+					{% endfor %}
+				</select>
+			</div>
+			<button type="submit">Update Booking</button>
+		</form>
 	</div>
-	<div>
-		<label for="date">Date:</label>
-		<input 
-			type="datetime-local" 
-			name="date" 
-			id="date" 
-			value="{{ booking.date }}"
-			required 
-		/>
-	</div>
-	<div>
-		<label for="customer_id">Customer:</label>
-		<select name="customer_id">
-			{% for customer in customers %}
-				<option 
-				{% if booking.customer.id == customer.id %}
-					selected
-				{% endif %}
-				value="{{ customer.id }}">
-					{{ customer.name }}
-				</option>
-			{% endfor %}
-		</select>
-	</div>
-	<div>
-		<label for="treatment_id">Treatment:</label>
-		<select name="treatment_id">
-			{% for treatment in treatments %}
-				<option 
-				{% if booking.treatment.id == treatment.id %}
-					selected
-				{% endif %}
-				value="{{ treatment.id }}">
-					{{ treatment.name }}
-				</option>
-			{% endfor %}
-		</select>
-	</div>
-	<button type="submit">Update Booking</button>
-</form>
-</div>
-<img src="../../static/gifs/gears-spinning.gif" alt="gears spinning" class="booking_image">
+	<img src="../../static/gifs/gears-spinning.gif" alt="gears spinning" class="booking_image">
 </main>
-	
 {% endblock content %}
