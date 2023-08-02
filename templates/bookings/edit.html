@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<main class="main_content_booking">
+<main class="main_content_flex_wrap">
 	<div class="flex_list">
 		<h1>Edit: {{ booking.name }}</h1>
 		<form action="/bookings/{{ booking.id }}" method="post">
