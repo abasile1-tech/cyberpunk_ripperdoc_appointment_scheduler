@@ -3,24 +3,23 @@
 {% block content %}
 	<h1>Our Procedures:</h1>
 	<div id="treatments_container">
-	{% for treatment in treatments %}
-		<div class="treatment_container">
-		<div>
-		<a href="/treatments/{{ treatment.id }}" class="treatment_link">{{ treatment.name }}</a>
-		</div>
-		{% if loop.index == 1 %}
-			<img src="../../static/images/mantis_blades.jpg" alt="mantis blades" class="treatment_image">
-			</div>
-		{% elif loop.index == 2 %}
-			<img src="../../static/images/gorilla_arms.jpg" alt="gorilla arms" class="treatment_image">
-			</div>
-		{% elif loop.index == 3 %}
-			<img src="../../static/images/sandevistan.jpg" alt="sandevistan" class="treatment_image">
-			</div>
-		{% else %}
-			<img src="../../static/images/plus_sign.png" alt="plus sign" class="treatment_image">
-			</div>
-		{% endif %}
-	{% endfor %}
+		{% for treatment in treatments %}
+			<div class="treatment_container">
+				<a href="/treatments/{{ treatment.id }}" class="treatment_link">{{ treatment.name }}</a>
+			
+				{% if loop.index == 1 %}
+					<img src="../../static/images/mantis_blades.jpg" alt="mantis blades" class="treatment_image">
+					</div>
+				{% elif loop.index == 2 %}
+					<img src="../../static/images/gorilla_arms.jpg" alt="gorilla arms" class="treatment_image">
+					</div>
+				{% elif loop.index == 3 %}
+					<img src="../../static/images/sandevistan.jpg" alt="sandevistan" class="treatment_image">
+					</div>
+				{% else %}
+					<img src="../../static/images/plus_sign.png" alt="plus sign" class="treatment_image">
+					</div>
+				{% endif %}
+		{% endfor %}
 	</div>
 {% endblock content %}

@@ -2,25 +2,25 @@
 
 {% block content %}
 <main class="main_content_booking">
-<div class="flex_list">
-<h1>Edit: {{ customer.name }}</h1>
+	<div class="flex_list">
+		<h1>Edit: {{ customer.name }}</h1>
 
-<form action="/customers/{{ customer.id }}" method="post">
-	<div>
-		<label for="name">Name:</label>
-		<input 
-			type="text" 
-			name="name" 
-			id="name" 
-			value="{{ customer.name }}"
-			required 
-			autofocus
-		/>
+		<form action="/customers/{{ customer.id }}" method="post">
+			<div>
+				<label for="name">Name:</label>
+				<input 
+					type="text" 
+					name="name" 
+					id="name" 
+					value="{{ customer.name }}"
+					required 
+					autofocus
+				/>
+			</div>
+			<button type="submit">Update Customer</button>
+		</form>
 	</div>
-	<button type="submit">Update Customer</button>
-</form>
-</div>
-<img src="../../static/gifs/gears-spinning.gif" alt="gears spinning" class="booking_image">
+	<img src="../../static/gifs/gears-spinning.gif" alt="gears spinning" class="booking_image">
 </main>
 	
 {% endblock content %}

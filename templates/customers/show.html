@@ -3,20 +3,20 @@
 {% block content %}
 <main class="main_content_booking">
 	<div class="flex_list">
-	<h1> {{customer.name}} </h1>
-	<h3>Treatments:</h3>
+		<h1> {{customer.name}} </h1>
+		<h3>Treatments:</h3>
 		{% for treatment in treatments  %}
-		<a href="/treatments/{{treatment.id}}" class="nav_link">{{treatment.name}}</a>
+			<a href="/treatments/{{treatment.id}}" class="nav_link">{{treatment.name}}</a>
 		{% endfor %}
-	<h3>Bookings:</h3>
+		<h3>Bookings:</h3>
 		{% for booking in bookings  %}
-		<a href="/bookings/{{booking.id}}" class="nav_link">{{booking.name}}</a>
+			<a href="/bookings/{{booking.id}}" class="nav_link">{{booking.name}}</a>
 		{% endfor %}
-	<a href="/customers/{{ customer.id }}/edit"><button>Edit {{ customer.name }}</button></a>
+		<a href="/customers/{{ customer.id }}/edit"><button>Edit {{ customer.name }}</button></a>
 
-	<form class="form-inline" action="/customers/{{customer.id}}/delete" method="POST">
-		<input type="submit" value="Delete {{ customer.name }}">
-	</form>
+		<form class="form-inline" action="/customers/{{customer.id}}/delete" method="POST">
+			<input type="submit" value="Delete {{ customer.name }}">
+		</form>
 	</div>
 	{% if customer.name == "V" %}
 		<img src="../../static/images/v.jpg" alt="v" class="new_image">

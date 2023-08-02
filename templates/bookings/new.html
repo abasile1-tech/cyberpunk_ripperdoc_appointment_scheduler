@@ -5,34 +5,34 @@
 	<img src="../../static/images/new_booking.jpg" alt="new_booking">
 	<form action="/bookings" method="post" id="hero_form">
 		<ul>
-		<li>
-		<label for="customer_id">Select a customer:</label>
-			<select name="customer_id" id="customer_id">
-				{% for customer in customers %}
-				<option value="{{ customer.id }}">{{ customer.name }}</option>
-				{% endfor %}
-			</select>
-		</li>
-		<li>
-		<label for="treatment_id">Select a treatment:</label>
-			<select name="treatment_id" id="treatment_id">
-				{% for treatment in treatments %}
-				<option value="{{ treatment.id }}">{{ treatment.name }}</option>
-				{% endfor %}
-			</select>
-		</li>
-		<li>
-		<label for="name">Name:</label>
-		<input type="text" name="name" placeholder="Enter a name:">
-		</li>
-		<li>
-		<label for="date">Date:</label>
-		<input type="datetime-local" name="date">
-		</li>
-		<li><input type='submit' value="Book Appointment">
-		</li>
+			<li>
+				<label for="customer_id">Select a customer:</label>
+				<select name="customer_id" id="customer_id">
+					{% for customer in customers %}
+						<option value="{{ customer.id }}">{{ customer.name }}</option>
+					{% endfor %}
+				</select>
+			</li>
+			<li>
+				<label for="treatment_id">Select a treatment:</label>
+				<select name="treatment_id" id="treatment_id">
+					{% for treatment in treatments %}
+						<option value="{{ treatment.id }}">{{ treatment.name }}</option>
+					{% endfor %}
+				</select>
+			</li>
+			<li>
+				<label for="name">Name:</label>
+				<input type="text" name="name" placeholder="Enter a name:">
+			</li>
+			<li>
+				<label for="date">Date:</label>
+				<input type="datetime-local" name="date">
+			</li>
+			<li>
+				<input type='submit' value="Book Appointment">
+			</li>
 		</ul>
 	</form>
 </div>
-
 {% endblock %}
