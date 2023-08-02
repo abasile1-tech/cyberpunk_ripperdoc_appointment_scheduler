@@ -88,6 +88,7 @@ A customer should be able to create a `Booking` with a name, date, time, and `Tr
 ![edit mantis blades](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/edit_mantis_blades.PNG?raw=true)
 ![add_customer](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/add_customer.PNG?raw=true)
 ![add_treatment](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/add_treatment.PNG?raw=true)
+![booking v](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/booking_v.PNG?raw=true)
 
 
 
