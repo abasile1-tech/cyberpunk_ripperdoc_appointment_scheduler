@@ -75,19 +75,19 @@ A customer should be able to create a `Booking` with a name, date, time, and `Tr
 - CSS
 - HTML
 ## :camera_flash: Screenshots:
-![home](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/home.png?raw=true)
-![our procedures](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/our_procedures.png?raw=true)
-![book appointment](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/book_appointment.png?raw=true)
-![treatment mantis blades](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/treatment_mantis_blades.png?raw=true)
-![david_martinez](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/david_martinez.png?raw=true)
-![admin_portal](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/admin_portal.png?raw=true)
-![customer_portal](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/customer_portal.png?raw=true)
-![customers](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/customers.png?raw=true)
-![bookings](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/bookings.png?raw=true)
-![edit david martinez](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/edit_david_martinez.png?raw=true)
-![edit mantis blades](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/edit_mantis_blades.png?raw=true)
-![add_customer](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/add_customer.png?raw=true)
-![add_treatment](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/add_treatment.png?raw=true)
+![home](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/home.PNG?raw=true)
+![our procedures](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/our_procedures.PNG?raw=true)
+![book appointment](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/book_appointment.PNG?raw=true)
+![treatment mantis blades](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/treatment_mantis_blades.PNG?raw=true)
+![david_martinez](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/david_martinez.PNG?raw=true)
+![admin_portal](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/admin_portal.PNG?raw=true)
+![customer_portal](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/customer_portal.PNG?raw=true)
+![customers](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/customers.PNG?raw=true)
+![bookings](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/bookings.PNG?raw=true)
+![edit david martinez](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/edit_david_martinez.PNG?raw=true)
+![edit mantis blades](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/edit_mantis_blades.PNG?raw=true)
+![add_customer](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/add_customer.PNG?raw=true)
+![add_treatment](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/add_treatment.PNG?raw=true)
 
 
 
