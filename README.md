@@ -4,7 +4,7 @@
 
 In the Cyberpunk genre of science fiction, ripperdocs are medical practitioners that can install cybernetic prostheses, called cyberware.
 
-## :arrow_right: Running Instructions:
+## :arrow_right: Running Instructions
 
 - Clone the repository to your local machine by using the command line:
   
@@ -67,14 +67,14 @@ A customer should be able to create a `Booking` with a name, date, time, and `Tr
 - :white_check_mark: A treatment could have a length of time
 - Could you try preventing double booking?
 
-## :wrench: The Technologies I Used:
+## :wrench: The Technologies I Used
 - Python
 - Flask
 - PostgreSQL
 - SQLAlchemy
 - CSS
 - HTML
-## :camera_flash: Screenshots:
+## :camera_flash: Screenshots
 ![home](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/home.PNG?raw=true)
 ![our procedures](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/our_procedures.PNG?raw=true)
 ![book appointment](https://github.com/abasile1-tech/cyberpunk_ripperdoc_appointment_scheduler/blob/main/static/screenshots/book_appointment.PNG?raw=true)
